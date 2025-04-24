@@ -5,12 +5,8 @@ on:
     branches:
       - main
 
-permissions: # needed to write to wiki repository with just the workflow's access token rather than PAT
-  contents: write
-  pages: write
-
 jobs:
-  test:
+  update-wiki:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Main Repository
@@ -63,5 +59,6 @@ jobs:
           Write-Host "Committing changes"
           git commit -m "chore: auto update command help ${{ github.run_id }}"
           Write-Host "Pushing changes"
+          # could error when two successive changes are in job queue / concurrently running at once, the older one will throw
           git push
           Write-Host "Successfully updated wiki with changes."
