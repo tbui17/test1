@@ -43,7 +43,7 @@ jobs:
           cd wiki
           
           # https://github.com/actions/checkout?tab=readme-ov-file#push-a-commit-using-the-built-in-token
-          # obsolete since we use PAT but may as well denote that this is authored by autmoation
+          # obsolete since we use PAT but may as well denote that this is authored by automation
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
