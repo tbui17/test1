@@ -38,7 +38,10 @@ jobs:
         
           
           Write-Host "Generating docs"
+          clear-content $location
+          "``````" >> $location
           dotnet run --project ./applications/lokql -- -c ".help" | select -skip 3 | set-content $location
+          "``````" >> $location
           
           # merge and push changes
           
