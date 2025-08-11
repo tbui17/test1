@@ -62,7 +62,7 @@
     <PackageVersion Include="CsvHelper" Version="33.0.1" />
     <PackageVersion Include="geohash-dotnet" Version="2.2.0" />
     <PackageVersion Include="FluentAssertions" Version="8.1.1" />
-    <PackageVersion Include="BenchmarkDotNet" Version="0.14.0" />
+    <PackageVersion Include="BenchmarkDotNet" Version="0.15.2" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 </Project>
